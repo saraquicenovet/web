@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Sara Quiceno - Medicina Veterinaria</title>
+  <link rel="stylesheet" href="styleicon.css">
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #ffffff;
+      background-color: #1e3a5f;
+      line-height: 1.6;
+    }
+
+    h1 {
+      font-family: monospace, serif;
+      color: #f1c40f;
+      font-size: 60px;
+    }
+
+    h2,
+    h3 {
+      font-family: "Andale Mono", serif;
+      color: #f1c40f;
+    }
+
+    a {
+      text-decoration: none;
+      color: #f1c40f;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-items: center;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f1c40f;
+      color: #1e3a5f;
+      border-radius: 5px;
+      margin: 10px 0;
+    }
+
+    .btn:hover {
+      background: #d4ac0d;
+    }
+
+    .btn2 {
+      align-items: center;
+      display: inline-flex;
+      padding: 5px 10px;
+      background: rgb(219, 221, 238);
+      color: #1e3a5f;
+      border-radius: 20px;
+      margin: 10px 0;
+    }
+
+    .btn2:hover {
+      background: rgb(164, 157, 153);
+    }
+
+    header {
+      background: #142b45;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffffff;
+    }
+
+    .hero {
+      background: url('https://via.placeholder.com/1200x600') no-repeat center center/cover;
+      color: #ffffff;
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .services,
+    .about,
+    .testimonials,
+    .contact,
+    .galery {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    footer {
+      background: #142b45;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Dra. Sara Quiceno</h1>
+      <img src="imagenes/header.webp">
+      <br><br>
+      <div class="navigation">
+        <ul>
+          <li class="list active">
+            <a href="#services">
+              <span class="icon">
+                <ion-icon name="paw-outline"></ion-icon>
+              </span>
+              <span class="text">Servicios</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#about">
+              <span class="icon">
+                <ion-icon name="book-outline"></ion-icon>
+              </span>
+              <span class="text">Nosotros</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#testimonials">
+              <span class="icon">
+                <ion-icon name="people-circle-outline"></ion-icon>
+              </span>
+              <span class="text">Testimonios</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#galery">
+              <span class="icon">
+                <ion-icon name="camera-outline"></ion-icon>
+              </span>
+              <span class="text">Galeria</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="#contact">
+              <span class="icon">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </span>
+              <span class="text">Contacto</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+
+      <script>
+        const list = document.querySelectorAll('.list');
+        function active() {
+          list.forEach((item) => item.classList.remove('active'));
+          this.classList.add('active');
+        }
+        list.forEach((item) => item.addEventListener('click', active));
+      </script>
+    </div>
+    <br>
+    <div class="container">
+      <a href="#contact" class="btn">Agenda una cita</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+
+    <div class="container">
+      <img src="imagenes/img grados.jpg" width="480" height="500">
+      <h2>Cuidamos a tus mascotas como si fueran nuestras</h2>
+      <p>En Dr. Sara Quiceno, ofrecemos servicios veterinarios especializados para perros y gatos con amor y
+        profesionalismo.</p>
+      <a href="#services" class="btn">Conoce nuestros servicios</a>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="service-item">
+        <h3>Consultas generales</h3>
+        <p>Nuestros especialistas brindan atención médico-veterinaria integral para la prevención, diagnóstico y
+          tratamiento de enfermedades en tu mascota. Además, atendemos casos de urgencia con el compromiso de garantizar
+          su bienestar.</p>
+      </div>
+      <div class="service-item">
+        <h3>Vacunación</h3>
+        <p>Aplicación de vacunas esenciales para perros y gatos, siguiendo el calendario de vacunación adecuado para
+          cada etapa de su vida.</p>
+      </div>
+      <div class="service-item">
+        <h3>Cirugías</h3>
+        <p>Realizamos procedimientos quirúrgicos con tecnología avanzada, desde esterilizaciones y castraciones hasta
+          intervenciones más especializadas. Nuestro equipo veterinario prioriza la seguridad y recuperación óptima de
+          tu mascota.</p>
+      </div>
+      <div class="service-item">
+        <h3>Laboratorio y diagnóstico</h3>
+        <p>Contamos con equipamiento de última generación para análisis clínicos, pruebas de laboratorio, radiografías y
+          ecografías. Un diagnóstico preciso nos permite ofrecer el mejor tratamiento para la salud de tu mascota.</p>
+      </div>
+    </div>
+    <div class="container">
+      <a href="#">
+        <span class="btn2">
+          <ion-icon name="home-outline"></ion-icon>
+        </span>
+        <span class="text"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Sobre Nosotros</h2>
+      <p>En Dr. Sara Quiceno, nos apasiona el bienestar de las mascotas. Con más de 1 año de experiencia, nos
+        especializamos en el cuidado de perros y gatos, brindando atención médica de calidad y un trato amoroso.</p>
+      <img src="imagenes/222.jpg" width="150" height="80" alt="Dra. Sara Quiceno">
+      <br>
+      <label for="Dra. Sara Quiceno">Dra. Sara Quiceno</label>
+    </div>
+    <div class="container">
+      <a href="#">
+        <span class="btn2">
+          <ion-icon name="home-outline"></ion-icon>
+        </span>
+        <span class="text"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Galería -->
+  <section id="galery" class="galery">
+    <div class="container">
+      <h2>Galería</h2>
+      <p>Contamos con una amplia galeria de imagenes y videos que reflejan el amor por lo que hacemos</p>
+      <a target="_blank" href="galeria.html" class="btn">Clic aquí</a>
+    </div>
+    <div class="container">
+      <a href="#">
+        <span class="btn2">
+          <ion-icon name="home-outline"></ion-icon>
+        </span>
+        <span class="text"></span>
+      </a>
+    </div>
+  </section>
+
+
+
+  <!-- Testimonios -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2>Testimonios</h2>
+    </div>
+    <div class="testimonial-item">
+      <p>"Súper formal, nos gustó mucho y demasiado amorosa con mi gato" - Maria Camila B.</p>
+    </div>
+    <div class="testimonial-item">
+      <p>"La Dra. Sara es increíble. Salvó la vida de mi gato y siempre está dispuesta a ayudar. ¡La recomiendo 100%!" -
+        Daniela G.</p>
+    </div>
+    <div class="testimonial-item">
+      <p>"Mi perro se siente como en casa cada vez que lo llevo. El trato es excepcional y los resultados son siempre
+        los mejores". - Juan P.</p>
+    </div>
+    </div>
+    <div class="container">
+      <a href="#">
+        <span class="btn2">
+          <ion-icon name="home-outline"></ion-icon>
+        </span>
+        <span class="text"></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contacto</h2>
+      <form id="formulario">
+        <input type="text" id="nombre" placeholder="Nombre" required>
+        <input type="email" id="correo" placeholder="Correo electrónico" required>
+        <input type="tel" id="telefono" placeholder="Teléfono" required>
+
+        <select id="tipoMascota" required>
+          <option value="">Tipo de mascota</option>
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+        </select>
+
+        <textarea id="motivo" placeholder="Motivo de la consulta" required></textarea>
+
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+      <div class="container">
+        <a href="#">
+          <span class="btn2">
+            <ion-icon name="home-outline"></ion-icon>
+          </span>
+          <span class="text"></span>
+        </a>
+      </div>
+
+      <script>
+        console.log("Script cargado"); // Para verificar que el código se ejecuta
+
+        document.getElementById("formulario").addEventListener("submit", function (event) {
+          event.preventDefault(); // Evita el envío normal del formulario
+
+          let nombre = document.getElementById("nombre").value.trim();
+          let correo = document.getElementById("correo").value.trim();
+          let telefono = document.getElementById("telefono").value.trim();
+          let tipoMascota = document.getElementById("tipoMascota").value;
+          let motivo = document.getElementById("motivo").value.trim();
+
+          if (nombre === "" || correo === "" || telefono === "" || tipoMascota === "" || motivo === "") {
+            alert("Por favor, completa todos los campos.");
+            return;
+          }
+
+          let numeroWhatsApp = "+573019076182"; // Reemplaza con tu número de WhatsApp
+
+          let mensaje = `Hola, mi nombre es *${nombre}* y me gustaría hacer una consulta.\n\n📧 Correo: ${correo}\n📞 Teléfono: ${telefono}\n🐾 Mascota: ${tipoMascota}\n📝 Motivo: ${motivo}`;
+
+          let url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensaje)}`;
+
+          console.log("Redirigiendo a:", url); // Verificar si el enlace se genera correctamente
+
+          window.open(url, "_blank"); // Abrir WhatsApp en una nueva pestaña
+        });
+      </script>
+      <p>Ubicación: [ Medellín - Colombia ]</p>
+      <p>Teléfono: [ +57 301 907 61 82 ]</p>
+      <p>Correo electrónico: [ sara.quiceno7@gmail.com ]</p>
+      <p>Horario de atención: Lunes a Domingo de 8:00 am a 6:00 pm</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Dr. Sara Quiceno. Todos los derechos reservados.</p>
+      <p>
+        <label for=""><ion-icon name="logo-facebook"></ion-icon></label>
+        <a href="https://www.facebook.com/sara.quiceno.7" target="_blank">Facebook</a> |
+        <label for=""><ion-icon name="logo-instagram"></ion-icon></label>
+        <a href="https://www.instagram.com/saraquicenog/?hl=es" target="_blank">Instagram</a> |
+        <label for=""><ion-icon name="logo-whatsapp"></ion-icon></label>
+        <a href="https://wa.link/2oc44d" target="_blank">WhatsApp</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
